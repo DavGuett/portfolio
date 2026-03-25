@@ -1,1 +1,9 @@
 @import "tailwindcss";
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    @apply bg-[#0F172A] text-slate-400 antialiased;
+}
