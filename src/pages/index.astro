@@ -1,16 +1,29 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
 import Hero from "../components/Hero.astro";
 import ProjectCard from "../components/ProjectCard.astro";
 import Skills from "../components/Skills.astro";
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+const tagsBot = ['Worker', '.NET', 'Webhook'];
+const tagsBlogman = ['PHP', 'Symfony', 'Blog'];
 ---
 
 <Layout>
 	<Hero/>
-	<ProjectCard tags={['david']} />
+	<div id="projetos" class="flex justify-center gap-5">
+		<ProjectCard
+			tags={tagsBot}
+			title="Frases Desmotivacionais Bot"
+			description="Bot feito para periodicamente enviar mensagens desmotivacionais para um servidor no Discord"
+			repoUrl="https://github.com/DavGuett/FrasesDesmotivacionaisBot"
+		/>
+		<ProjectCard
+			tags={tagsBlogman}
+			title="Blogman"
+			description="Projeto inicial de um blog/intranet feito para aprender conceitos do Symfony e PHP"
+			repoUrl="https://github.com/DavGuett/blogman"
+		/>
+	</div>
+
 	<Skills />
 </Layout>

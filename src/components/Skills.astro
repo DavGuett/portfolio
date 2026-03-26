@@ -9,12 +9,12 @@ const skillGroups = [
     {
         title: "DevOps & Infraestrutura",
         description: "Foco em automação, containers e deploy contínuo.",
-        skills: ["Docker", "CI/CD Pipelines", "Linux (Kubuntu/Fedora)", "AWS", "SRE Practices"]
+        skills: ["Docker", "CI/CD Pipelines", "Linux", "SRE Practices"]
     },
     {
         title: "Segurança & Ferramentas",
         description: "Gestão de identidade e ferramentas de produtividade.",
-        skills: ["Keycloak", "IdentityServer", "Git", "Postman", "Agile/Scrum"]
+        skills: ["Keycloak", "Git", "Git Flow", "Postman", "Agile/Scrum"]
     }
 ];
 ---
@@ -35,9 +35,9 @@ const skillGroups = [
 
                     <div class="flex flex-wrap gap-2 mt-auto pt-4">
                         {group.skills.map(skill => (
-                                <span class="px-2 py-1 text-xs font-medium rounded-md bg-slate-800 text-slate-300 border border-slate-700">
-              {skill}
-            </span>
+                            <span class="px-2 py-1 text-xs font-medium rounded-md bg-slate-800 text-slate-300 border border-slate-700">
+                                {skill}
+                            </span>
                         ))}
                     </div>
                 </div>
